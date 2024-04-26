@@ -1,0 +1,14 @@
+body {
+  background-color: #ccd3ca;
+}
+
+div {
+  border: 10px solid black;
+  padding: 30px 40px;
+  margin: 50px;
+}
+
+h2 {
+  background-color: #8e7ab5;
+  margin: 0;
+}

@@ -1,0 +1,292 @@
+body {
+  position: relative;
+}
+/* main conatiner */
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #f5efe6;
+  position: relative;
+  top: 0;
+  left: 0;
+  animation: night 20s linear infinite;
+}
+
+/* cloud container */
+.cloud-container {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+/* sun box */
+.sun {
+  width: 10%;
+  background-color: yellow;
+  border-radius: 50%;
+  background: radial-gradient(white, yellow);
+  animation: sunmoveleft 20s infinite;
+  position: relative;
+  z-index: 1;
+}
+/* cloud on left */
+.cloud1 {
+  width: 22.5%;
+  background: url(./images/cloud.png) no-repeat center;
+  background-size: 350px;
+}
+
+/* cloud in middle left */
+.cloud2 {
+  width: 22.5%;
+  background: url(./images/cloud.png) no-repeat center;
+  background-size: 350px;
+}
+
+/* cloud in middle right */
+.cloud3 {
+  width: 22.5%;
+  background: url(./images/cloud.png) no-repeat center;
+  background-size: 350px;
+}
+
+/* cloud in right */
+.cloud4 {
+  width: 22.5%;
+  background: url(./images/cloud.png) no-repeat center;
+  background-size: 350px;
+}
+
+/* rain container */
+.rain-container {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+/* rain on the left */
+.rain1 {
+  height: 100%;
+  width: 25%;
+  text-align: center;
+  margin: 0;
+}
+
+/* rain in the middle left */
+.rain2 {
+  height: 100%;
+  width: 25%;
+}
+
+/* rain in the middle right */
+.rain3 {
+  height: 100%;
+  width: 25%;
+}
+
+/* rain on the right */
+.rain4 {
+  height: 100%;
+  width: 25%;
+}
+
+/* the entire boat container where boat is moving */
+.boat-container {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+/* boat picture container */
+.boat {
+  height: 100%;
+  width: 20%;
+  background: url(./images/boat.png) no-repeat center;
+  background-size: 180px;
+  margin: 0;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: boatmoveleft linear 15s infinite;
+  animation-direction: alternate-reverse;
+}
+
+/* keyframe to move sun from left to right */
+@keyframes sunmoveleft {
+  0% {
+    top: 0;
+    left: 0;
+    .container {
+      background-color: rgba(0, 0, 0, 0.179);
+    }
+  }
+
+  100% {
+    top: 0;
+    left: 90%;
+    display: none;
+  }
+}
+
+/* keyframe to move boat left to right and then right to left */
+@keyframes boatmoveleft {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  100% {
+    top: 0;
+    left: 90%;
+  }
+}
+
+/* keyframe for raining */
+@keyframes raining {
+  0% {
+    top: 0;
+  }
+
+  25% {
+    display: none;
+  }
+
+  75% {
+  }
+
+  100% {
+    top: 100%;
+  }
+}
+
+/* keyframe to changing background colour to make it look its transitioning from day to night  */
+@keyframes night {
+  0% {
+    background: #f5efe6;
+    top: 0;
+    left: 0;
+  }
+  25% {
+    background-color: rgba(0, 0, 0, 0.175);
+    top: 0;
+    left: 0;
+  }
+
+  50% {
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.438);
+  }
+  75% {
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.686);
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    background-color: black;
+  }
+}
+
+/* Each line of rain with different animation applied to look like rain. */
+l1 {
+  position: relative;
+  top: 0;
+  animation: raining 1s linear infinite;
+}
+l2 {
+  position: relative;
+  top: 0;
+}
+l3 {
+  position: relative;
+  top: 0;
+  animation: raining 10s linear infinite;
+}
+l4 {
+  position: relative;
+  top: 0;
+  animation: raining 11s linear infinite;
+}
+l5 {
+  position: relative;
+  top: 0;
+}
+l6 {
+  position: relative;
+  top: 0;
+  animation: raining 3s linear infinite;
+}
+l7 {
+  position: relative;
+  top: 0;
+  animation: raining 2s linear infinite;
+}
+l8 {
+  position: relative;
+  top: 0;
+  animation: raining 1s linear infinite;
+}
+l9 {
+  position: relative;
+  top: 0;
+}
+l10 {
+  position: relative;
+  top: 0;
+  animation: raining 9s linear infinite;
+}
+l11 {
+  position: relative;
+  top: 0;
+  animation: raining 7s linear infinite;
+}
+l12 {
+  position: relative;
+  top: 0;
+}
+l13 {
+  position: relative;
+  top: 0;
+  animation: raining 8s linear infinite;
+}
+l14 {
+  position: relative;
+  top: 0;
+  animation: raining 11s linear infinite;
+}
+l16 {
+  position: relative;
+  top: 0;
+}
+l17 {
+  position: relative;
+  top: 0;
+  animation: raining 3s linear infinite;
+}
+l18 {
+  position: relative;
+  top: 0;
+}
+l19 {
+  position: relative;
+  top: 0;
+  animation: raining 2s linear infinite;
+}
+l20 {
+  position: relative;
+  top: 0;
+  animation: raining 7s linear infinite;
+}
